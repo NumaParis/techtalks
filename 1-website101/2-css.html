@@ -4,6 +4,7 @@ body {
   padding: 20px 80px;
   background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
   font-family: sans-serif;
+  text-align: center;
 }
 img, span, a {
   display:block;
@@ -41,8 +42,31 @@ img, span, a {
   display: block;
   text-shadow: none;
 }
+
+span {
+  text-align: center;
+}
+img {
+  max-width: 200px;
+  margin:auto;
+}
+button {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+button:hover {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1.5em;
+  cursor: pointer;
+}
 </style>
 
 <a id="mylink"  href="http://numa.co">NUMA</a>
 <span class="mytext">This is beautiful</span>
 <img class="myimage" src="http://pngimg.com/uploads/simpsons/simpsons_PNG84.png">
+<button>Click me</button>

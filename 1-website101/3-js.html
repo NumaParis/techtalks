@@ -1,0 +1,85 @@
+<html>
+<head>
+  <style>
+
+  body {
+    padding: 20px 80px;
+    background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+    font-family: sans-serif;
+    text-align: center;
+  }
+  img, span, a {
+    display:block;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+  @import url(https://fonts.googleapis.com/css?family=Squada+One);
+
+  #mylink {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+  }
+  #mylink:after {
+    content:"NUMA";
+    position: absolute;
+    left: 34%;
+    top: 2px;
+  }
+  #mylink:after {
+    /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: block;
+    text-shadow: none;
+  }
+
+  span {
+    text-align: center;
+  }
+  img {
+    max-width: 200px;
+    margin:auto;
+  }
+  button {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  button:hover {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $('#mybutton').click(function() {
+      $(".myimage").attr("src","https://s-media-cache-ak0.pinimg.com/originals/0d/30/b4/0d30b41543d97867ca502a8ac3b5afe0.gif");
+    })
+  });
+  </script>
+</head>
+<body>
+  <a id="mylink"  href="http://numa.co">NUMA</a>
+  <span class="mytext">This is beautiful</span>
+  <img class="myimage" src="http://pngimg.com/uploads/simpsons/simpsons_PNG84.png">
+  <button id="mybutton">Click me</button>
+</body>
