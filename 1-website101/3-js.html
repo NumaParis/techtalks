@@ -74,6 +74,13 @@
     $('#mybutton').click(function() {
       $(".myimage").attr("src","https://s-media-cache-ak0.pinimg.com/originals/0d/30/b4/0d30b41543d97867ca502a8ac3b5afe0.gif");
     })
+
+    $('#mybutton2').click(function() {
+      $.get( "http://api.icndb.com/jokes/random", function( data ) {
+        $( "#chuck" ).text( data.value.joke );
+        console.log( data );
+      });
+    })
   });
   </script>
 </head>
@@ -82,4 +89,7 @@
   <span class="mytext">This is beautiful</span>
   <img class="myimage" src="http://pngimg.com/uploads/simpsons/simpsons_PNG84.png">
   <button id="mybutton">Click me</button>
+
+  <button id="mybutton2">Get a Chuck Norris joke</button>
+  <h4 id="chuck"></h4>
 </body>
