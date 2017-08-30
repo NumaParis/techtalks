@@ -72,7 +72,7 @@
   <script>
 
   function getChuck() {
-    $.get( "http://api.icndb.com/jokes/random", function( data ) {
+    $.get( "https://api.icndb.com/jokes/random", function( data ) {
       $( "#chuck" ).text( data.value.joke );
     });
   }
